@@ -1,0 +1,14 @@
+pothole-detection-alert-system/
+├── app/
+│   ├── model/                          # Folder to store the pre-trained YOLOv5 model
+│   ├── static/                         # Folder to store example images or test files
+│   ├── __init__.py                     # To mark app directory as a package
+│   ├── detection.py                    # Pothole detection logic
+│   ├── s3_upload.py                    # Code for uploading images to S3
+│   ├── alert_service.py                # Code for sending alerts via SNS
+│   └── api.py                          # Flask API server
+├── config/
+│   ├── config.yaml                     # YAML configuration file for AWS and other settings
+├── requirements.txt                    # List of dependencies
+├── README.md                           # Project documentation
+└── .gitignore                          # Ignore unnecessary files for Git
